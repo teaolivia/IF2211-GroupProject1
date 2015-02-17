@@ -1,6 +1,3 @@
-// File berisi input berupa alat listrik beserta besaran dayanya (dalam kWh)
-// !!BELUM SELESAI!!
-
 #include "input.h"
 
 // ctor
@@ -13,7 +10,7 @@ input::~input(){
 	
 }
 
-// setter input barang
+// setter input input
 void input::Setter(string _name, float _kWh, unsigned int _slot, unsigned _n_slot, unsigned int _release, unsigned int _deadline, unsigned int _priority){
 	name = _name;
 	kWh = _kWh;
@@ -24,12 +21,12 @@ void input::Setter(string _name, float _kWh, unsigned int _slot, unsigned _n_slo
 	p = _priority;
 }
 
-// getter nama barang input
+// getter nama input input
 string input::GetName(){
 	return name;
 }
 
-// setter nama barang input
+// setter nama input input
 void input::SetName(string val){
 	name = val;
 }
@@ -65,4 +62,32 @@ void input::SetRelease(){
 
 unsigned int input::Getn_slot(){
 	return n_slot;
+}
+
+void input::Setn_slot(unsigned int val){
+	 n_slot = val;
+}
+
+unsigned int input::Getrelease(){
+	return r;
+}
+
+void input::SetRelease(unsigned int val){
+	r = val;
+}
+
+unsigned int input::GetDeadline(){
+	return d;
+}
+
+void input::Setdeadline(unsigned int val){
+	d = val;
+}
+
+unsigned int input::GetPriority(){
+	return p;
+}
+
+void input::Setpriority(unsigned int val){
+	p = val;
 }
