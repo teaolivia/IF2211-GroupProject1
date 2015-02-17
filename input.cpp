@@ -1,4 +1,5 @@
 // File berisi input berupa alat listrik beserta besaran dayanya (dalam kWh)
+// !!BELUM SELESAI!!
 
 #include "input.h"
 
