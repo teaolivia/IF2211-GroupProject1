@@ -7,7 +7,7 @@ using namespace std;
 class Input{
 	public:
 		Input();
-		virtual ~Barang();
+		virtual ~Input();
 		void Setter(string _name, float _kWh, unsigned int _slot, unsigned _n_slot, unsigned int _release, unsigned int _deadline, unsigned int _priority);
 		string Getname();
 		void Setname(string val);
